@@ -3,7 +3,7 @@ project(macdeployqt)
 
 find_package(Qt6 COMPONENTS Core Widgets BuildInternals)
 if (NOT Qt6_FOUND)
-    find_package(Qt5 5.15 COMPONENTS Core Widgets BuildInternals REQUIRED)
+    find_package(Qt5 5.15 COMPONENTS Core Widgets REQUIRED)
 endif()
 
 add_executable(macdeployqt shared/shared.cpp main.cpp)
